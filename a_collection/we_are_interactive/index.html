@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="initial-scale=1,width=device-width" />
+	<title>We are Interactive</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.multiscroll.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/jquery.multiscroll.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="ms-left">
+		
+		<div class="ms-section" id="left1">
+			<header>
+			<ul id="menu">
+			<li data-menuanchor="first"><a href="#second">Categories</a></li>
+			<li data-menuanchor="second"><a href="#">Animations</a></li>
+			</ul>
+			</header>
+			<img class="logo" src="img/logo.jpg">
+			<a class="link home-link" href="#">View Portfolio</a>
+		</div>
+
+		<div class="ms-section" id="left2">
+			<header class="page-title">
+				<h1>Categories</h1>
+			</header>
+			<div class="col col-2">
+				<a class="link" href="#third">Interactive Technology</a>
+				<a class="link" href="#fifth">Facial Movements</a>
+			</div>
+			<div class="col col-2">
+				<a class="link" href="#sixth">Body Movements</a>
+				<a class="link" href="#eighth">Interactive Designs</a>
+			</div>
+		</div>
+
+		<div class="ms-section" id="left3">
+			<header class="page-title">
+				<h1>Interactive Technology</h1>
+			</header>
+			<div class="col col-2">
+				<a class="link" href="#">Computer</a>
+				<a class="link" href="#">Phone</a>
+				<a class="link" href="#">Keyboard</a>
+				<a class="link" href="#">Light Switch</a>
+				<a class="link" href="#">Mobile Applications</a>
+			</div>
+			<div class="col col-2">
+				<a class="link" href="#">Printer</a>
+				<a class="link" href="#">Laser Cutter</a>
+				<a class="link" href="#">3D Printing</a>
+				<a class="link" href="#">Projector</a>
+				<a class="link" href="#">Smartphone</a>
+			</div>
+		</div>
+		
+		<div class="ms-section img-interactive" id="left4">
+			<header class="page-title">
+				<h1>Interactive Technology</h1>
+			</header>
+		</div>
+		
+		<div class="ms-section" id="left5">
+			<header class="page-title">
+				<h1>Facial Movements</h1>
+			</header>
+			<div class="col col-2">
+				<a class="link" href="#">Smiling</a>
+				<a class="link" href="#">Winking</a>
+				<a class="link" href="#">Laughing</a>
+			</div>
+			<div class="col col-2">
+				<a class="link" href="#">Crying</a>
+				<a class="link" href="#">Mouth Open</a>
+				<a class="link" href="#">Yawning</a>
+			</div>
+		</div>
+		
+		<div class="ms-section" id="left6">
+			<header class="page-title">
+				<h1>Body Movements</h1>
+			</header>
+			<div class="col col-2">
+				<a class="link" href="#">Walking</a>
+				<a class="link" href="#">Sitting</a>
+				<a class="link" href="#">Waving</a>
+				<a class="link" href="#">Natural Reflexes</a>
+			</div>
+			<div class="col col-2">
+				<a class="link" href="#">Jumping</a>
+				<a class="link" href="#">Skipping</a>
+				<a class="link" href="#">Running</a>
+			</div>
+		</div>
+		
+		<div class="ms-section img-bodyfacial" id="left7">
+			<header class="page-title">
+				<h1>Body/Facial Movements</h1>
+			</header>
+		</div>
+		
+		<div class="ms-section" id="left8">
+			<header class="page-title">
+				<h1>Interactive Designs</h1>
+			</header>
+			<div class="col col-2">
+				<a class="link" href="#">3D Art Objects</a>
+				<a class="link" href="#">Light Installations</a>
+				<a class="link" href="#">Book Designs</a>
+			</div>
+			<div class="col col-2">
+				<a class="link" href="#">Sculptures</a>
+				<a class="link" href="#">Interactive Materials</a>
+				<a class="link" href="#">Paintings</a>
+			</div>
+		</div>
+		
+		<div class="ms-section img-interactivedesigns" id="left9">
+			<header class="page-title">
+				<h1>Interactive Designs</h1>
+			</header>
+		</div>
+</div>
+	
+<div class="ms-right">
+		<div class="ms-section" id="right1">
+			Home
+		</div>
+
+		<div class="ms-section" id="right2">
+			Categories
+		</div>
+
+		<div class="ms-section" id="right3">
+			Interactive Technology
+		</div>
+		
+		<div class="ms-section" id="right4">
+			Interactive Technology
+		</div>
+		
+		<div class="ms-section" id="right5">
+			Facial Movements
+		</div>
+		
+		<div class="ms-section" id="right6">
+			Body Movements
+		</div>
+		
+		<div class="ms-section" id="right7">
+			Body / Facial Movements
+		</div>
+		
+		<div class="ms-section" id="right8">
+			Interactive Designs
+		</div>
+		
+		<div class="ms-section" id="right9">
+			Interactive Designs
+		</div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+	 $(document).ready(function() {
+            $('.container').multiscroll({
+            	sectionsColor: ['#fff', '#e6e7e8', '#fff', '#e6e7e8', '#e6e7e8', '#e6e7e8', '#e6e7e8', '#e6e7e8', '#e6e7e8'],
+            	anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth'],
+            	menu: '#menu',
+            	css3: true,
+            	paddingTop: '100px',
+            	navigation: true,
+            	navigationTooltips: ['We Are Interactive', 'Categories', 'Interactive Technology', 'Interactive Technology', 'Facial Movements', 'Body Movements', 'Body/Facial Movements', 'Interactive Designs', 'Interactive Designs']
+            });
+        });
+</script>
+</body>
+</html>
