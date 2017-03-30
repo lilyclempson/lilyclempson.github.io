@@ -46,3 +46,95 @@ for (var i = 0; i < 10; i = i + 1) {
 }
 
 
+console.log("How many licks does it take to get to the center of a tootsie pop??");
+
+
+for (var licks = 1; licks <= 3; licks ++) {
+	if (licks < 4) {
+		console.log("ahhh " + licks);
+	} else {
+		console.log("CRUNCH!!")
+	}
+} 
+
+
+function askMrOwl(numOfLicks) {
+	for (var licks = 1; licks <= 3; licks ++) {
+	if (licks < 4) {
+		console.log("ahhh " + licks);
+	} else {
+		console.log("CRUNCH!!")
+	}
+ }
+
+}
+
+
+askMrOwl(18);
+
+
+
+//# # # #
+ 
+ //# # # #
+//# # # #
+  //# # # #
+
+
+function makeCheckerboard(width, height) {
+
+	var checkerboard = "";
+
+	for (j = 0; j < height; j++){
+
+		if (j % 2) {
+			for (i = 0; i < width; i++) {
+				if ( i % 2) {
+	    				checkerboard = checkerboard + "#"
+				} else {
+					checkerboard = checkerboard + " "
+	  			}
+			}
+
+		} else {
+			for (i = 0; i < width; i++) {
+				if ( i % 2 ){
+					checkerboard = checkerboard + " "
+				} else {
+					checkerboard = checkerboard + "#"
+				}
+			}
+		} 
+
+ 		checkerboard = checkerboard + "\n"
+	}
+
+	console.log(checkerboard);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
