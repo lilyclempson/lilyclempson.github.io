@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta content="initial-scale=1,width=device-width" name="viewport">
+	<title>Typography</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/jquery.multiscroll.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+	</script>
+	<script src="js/jquery.easings.min.js" type="text/javascript">
+	</script>
+	<script src="js/jquery.multiscroll.min.js" type="text/javascript">
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="ms-left">
+			<div class="ms-section" id="left1">
+				<header>
+					<ul id="menu">
+						<li data-menuanchor="first">
+							<a href="posts.html">Posts</a>
+						</li>
+						<li data-menuanchor="second">
+							<a href="about.html">About</a>
+						</li>
+					</ul>
+				</header><img class="logo" src="img/logo.jpg"> <a class="link home-link" href="posts.html">View Blog Posts</a>
+			</div>
+			<div class="ms-section" id="left6">
+				<header class="page-title">
+					<h1>Blog Post 4</h1>
+				</header>
+				<div class="image image-left"><img src="img/blog-4-il.jpg"></div>
+				<div class="image image-right"><img src="img/blog-4-ir.jpg"></div>
+				<h2>Stefan Sagemeister</h2>
+				<div class="col">
+					<p>Stefan Sagmeister was born August 6, 1962, and is a New York-based graphic designer and typographer. Sagmeister co-founded a design ﬁrm called Sagmeister &amp; Walsh Inc. with Jessica Walsh in New York City. He has designed album covers for Lou Reed, OK Go, The Rolling Stones, David Byrne, Jay Z, Aerosmith and Pat Metheny.</p>
+					<p>Stefan Sagmeister proceeded to form the New York based Sagmeister Inc. in 1993 and has since been creating different designs that involve branding, graphics, and packaging for clients as diverse as the Rolling Stones, HBO, the Guggenheim Museum and Time Warner. Sagmeister Inc. has employed designers including Martin Woodtli, and Hjalti Karlsson and Jan Wilker, who later formed Karlssonwilker, another well known and hugely successful company within the art world.</p>
+					<p>In addition, Sagmeister is a long-standing artistic collaborator with musicians David Byrne and Lou Reed. His passion for the music industry is shown in the many typographic designs he has created for the music industry as a whole. He is the author of the design monograph "Made You Look" which was published by Booth-Clibborn editions.</p>
+					<p>Solo shows on Sagmeister, Inc.'s work have been mounted in many places including; Vienna, New York, Berlin, Japan, Osaka, Prague, Cologne, and Seoul. Sagemeister also teaches in the graduate department of the School of Visual Arts in New York. His motto is "Design that needed guts from the creator and still carries the ghost of these guts in the ﬁnal execution."</p>
+				</div>
+			</div>
+		</div>
+		<div class="ms-right">
+			<div class="ms-section" id="right1">
+				Home
+			</div>
+			<div class="ms-section" id="right2">
+				Post 4
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	    $(document).ready(function() {
+	           $('.container').multiscroll({
+	               sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff'],
+	               anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth'],
+	               menu: '#menu',
+	               css3: true,
+	               paddingTop: '100px',
+	               navigation: true,
+	               navigationTooltips: ['Home', 'Post 4']
+	           });
+	       });
+	</script>
+</body>
+</html>

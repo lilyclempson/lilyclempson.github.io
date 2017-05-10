@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta content="initial-scale=1,width=device-width" name="viewport">
+	<title>Typography</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/jquery.multiscroll.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+	</script>
+	<script src="js/jquery.easings.min.js" type="text/javascript">
+	</script>
+	<script src="js/jquery.multiscroll.min.js" type="text/javascript">
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="ms-left">
+			<div class="ms-section" id="left1">
+				<header>
+					<ul id="menu">
+						<li data-menuanchor="first">
+							<a href="posts.html">Posts</a>
+						</li>
+						<li data-menuanchor="second">
+							<a href="about.html">About</a>
+						</li>
+					</ul>
+				</header><img class="logo" src="img/logo.jpg"> <a class="link home-link" href="posts.html">View Blog Posts</a>
+			</div>
+		<div class="ms-section" id="left9">
+				<header class="page-title">
+					<h1>Blog Post 7</h1>
+				</header>
+				<div class="image image-left"><img src="img/blog-7-il.jpg"></div>
+				<div class="image image-right"><img src="img/blog-7-ir.jpg"></div>
+				<h2>John Baskerville</h2>
+				<div class="col">
+					<p>John Baskerville (28 January 1706&nbsp;– 8 January 1775) was an English businessman, but he is best remembered as a printer and well known type designer.</p>
+					<p>Baskerville work was ﬁrst recognized when he started printing works for the University of Cambridge in 1758. His typefaces were greatly admired by Benjamin Franklin, a printer and fellow member of the Royal Society of Arts, who took the designs back to the United States, where they were adopted for most federal government publishing. Baskerville's work was often criticized by many jealous competitors, as his work was always ahead of his time, but since the 1920s many new fonts have been released by Linotype, Monotype, and other type foundries, showing his work and mainly called 'Baskerville'. In addition, Baskerville’s most notable typeface 'Baskerville' represents the differences of transitional type face and bridges a gap between Old and Modern type of typographic design and style.</p>
+					<p>Baskerville also was responsible for signiﬁcant innovations in printing, paper and ink production. He developed a new technique which produced a smoother whiter paper, allowing him to showcase his strong black type.</p>
+					<p>In addition to this, when initially composing his work Baskervile would often begin with displaying the importance of the blank space, which later became a huge inspiration for many Neo-classical typographers. He would remove anything that obstructs clarity, mainly working with ornaments and rules incredibly neatly, and always with large margins. Moreover, Baskervile is a typeface that portrays the character of a gentleman, elegance and clear design and its form is a huge contrast from the Continental typography of the Late Baroque Period.</p>
+				</div>
+			</div>
+		</div>
+		<div class="ms-right">
+			<div class="ms-section" id="right1">
+				Home
+			</div>
+			<div class="ms-section" id="right2">
+				Post 7
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	    $(document).ready(function() {
+	           $('.container').multiscroll({
+	               sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff'],
+	               anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth'],
+	               menu: '#menu',
+	               css3: true,
+	               paddingTop: '100px',
+	               navigation: true,
+	               navigationTooltips: ['Home', 'Post 7']
+	           });
+	       });
+	</script>
+</body>
+</html>

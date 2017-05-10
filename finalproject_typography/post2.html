@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta content="initial-scale=1,width=device-width" name="viewport">
+	<title>Typography</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/jquery.multiscroll.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+	</script>
+	<script src="js/jquery.easings.min.js" type="text/javascript">
+	</script>
+	<script src="js/jquery.multiscroll.min.js" type="text/javascript">
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="ms-left">
+			<div class="ms-section" id="left1">
+				<header>
+					<ul id="menu">
+						<li data-menuanchor="first">
+							<a href="posts.html">Posts</a>
+						</li>
+						<li data-menuanchor="second">
+							<a href="about.html">About</a>
+						</li>
+					</ul>
+				</header><img class="logo" src="img/logo.jpg"> <a class="link home-link" href="posts.html">View Blog Posts</a>
+			</div>
+			<div class="ms-section" id="left4">
+				<header class="page-title">
+					<h1>Blog Post 2</h1>
+				</header>
+				<div class="image image-left"><img src="img/blog-2-il.jpg"></div>
+				<div class="image image-right"><img src="img/blog-2-ir.jpg"></div>
+				<h2>Christopher Wool</h2>
+				<div class="col">
+					<p>Christopher Wool was born 1955, in Boston and is an American artist. Since the 1980s, Wool's art has incorporated issues surrounding post-conceptual ideas, both striking and aesthetically pleasing. He now lives and works in New York City and Marfa, Texas, together with his wife and fellow painter Charline von Heyl.</p>
+					<p>Wool is best known for his paintings of large, black, stenciled letters on white canvases. He began to create word paintings in the late 1980s, reportedly after having seen grafﬁti on a brand new white truck, a strong inﬂuence you can clearly see in his work today. Using a system of alliteration, with the words often broken up by a grid system, or with the vowels removed, as in ‘TRBL’ or ‘DRNK’, Wool’s word paintings often demand reading aloud to make sense. Similarly, his paintings stand out to the viewers as they demand attention within a space, due to their scale and visual complexity.</p>
+					<p>At 303 Gallery in 1988, Wool and fellow artist Robert Gober presented a collaborative exhibition and installation which included Wool's seminal text-based painting. The work features words from a famous line in Francis Ford Coppola's ﬁlm Apocalypse Now, based on the Joseph Conrad novel Heart of Darkness. From the early 1990s through the present, the silkscreen has been a primary tool in Wool’s practice. In his abstract paintings Wool brings together ﬁgures and the disﬁgured, drawing and painting, spontaneous impulses and well thought-out ideas. This was again a technique that Wool had developed over time, as well as being one of the ﬁrst to experiment with it in relation to graphic design and typography. He draws lines on the canvas with a spray gun and then, directly after, wipes them out again with a rag to give a new picture in which clear lines have to stand their own against smeared surfaces.</p>
+				</div>
+			</div>
+		</div>
+		<div class="ms-right">
+			<div class="ms-section" id="right1">
+				Home
+			</div>
+			<div class="ms-section" id="right2">
+				Post 2
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	    $(document).ready(function() {
+	           $('.container').multiscroll({
+	               sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff'],
+	               anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth'],
+	               menu: '#menu',
+	               css3: true,
+	               paddingTop: '100px',
+	               navigation: true,
+	               navigationTooltips: ['Home', 'Post 2']
+	           });
+	       });
+	</script>
+</body>
+</html>
